@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@color/colorDarker"
+    tools:context=".activity.ProfileSettingActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_border"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/profile_image"
+        android:padding="12dp"
+        android:hint="Enter Full Name"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp" />
+    <EditText
+        android:id="@+id/profile_about"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:inputType="textMultiLine"
+        android:hint="Something About Yourself"
+        android:padding="12dp"
+        android:layout_below="@id/profile_name"
+        android:textSize="12dp"
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/profile_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_below="@id/profile_about"
+        android:hint="Enter Class"
+        android:padding="12dp"
+        android:textSize="12dp"
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/profile_div"
+        android:layout_width="match_parent"
+        android:layout_below="@id/profile_class"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Enter Div"
+        android:padding="12dp"
+        android:textSize="12dp"
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/profile_rollNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Enter Roll Number"
+        android:padding="12dp"
+        android:layout_below="@id/profile_div"
+        android:textSize="12dp"
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:singleLine="true" />
+
+    <Button
+        android:layout_below="@id/profile_rollNum"
+        android:id="@+id/profile_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorWhite"
+        android:text="Update Profile"
+        android:background="@color/colorPrimaryDark"
+        android:padding="12dp"/>
+</RelativeLayout>

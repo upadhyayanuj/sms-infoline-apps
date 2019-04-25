@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragment.LibIntroFragment">
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView_vision">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view_gf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:id="@+id/lib"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingLeft="5sp"
+                        android:text="About Library"
+                        android:textColor="#111"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        />
+
+                    <View
+                        android:layout_below="@id/lib"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dip"
+                        android:background="#ff0331" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lib"
+                        android:id="@+id/lib_d"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:layout_margin="0dp"
+                        android:padding="10dp"
+                        android:text="LRC at Bunts Sangha’s S.M. Shetty College of Science, Commerce &amp; Management Studies, inaugurated on 30/09/2010 is a fully Air conditioned Library with a seating capacity of 207. The reading room is Wi-Fi enabled &amp; is open for 12 hours from 7:00 am to 7:00 pm. The Library houses collection of both Junior &amp; Degree College. The current collection of the degree college section is 9,296 volumes of books, 53 periodical titles &amp; 13 newspapers. The Library housekeeping operations are automated through SOUL Library Software.
+
+The Library has subscription to NLIST (by UGC – INFLIBNET), through which students &amp; teachers can access many electronic resources like full-text of more than 6000+ e-journals and 1,35,000+ e-books. The Library has institutional membership to British Council Library &amp; Tata Institute of Social Sciences Library. Students are provided with ten computers with internet facility for their project &amp; study work. The Library collection can be searched through SOUL Web OPAC. Access to many subject related free online journals is provided through Directory of Open Access Journals (DOAJ).  The Library houses a separate Teacher’s Corner for Teachers where 7 computer terminals are provided along with 1 printer &amp; 1 printer-cum-scanner. The library is secured by 5 CCTV cameras.
+
+Topper’s card to top 10 students of each semester of each course.
+
+To encourage the use of reference books &amp; to inculcate good reading habits, students are given 3 different library cards – Textbook Card, Reference Book Card &amp; General Reading Card.
+
+PG students are given extended loan period of 14 days.
+
+Contents page service to teachers on a regular basis.
+
+Articles of interest to the college &amp; related to the course syllabus are displayed in the ‘Information Corner’ on a regular basis
+
+Information about part-time jobs &amp; career related articles are displayed in the ‘Employment Corner’ on a regular basis.
+
+Extension activities like Book Review Competition, Essay Writing, Reference Book Displays, Book Exhibition etc. to promote Library resources &amp; services
+"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

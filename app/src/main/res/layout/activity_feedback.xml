@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@drawable/gradient"
+    tools:context=".activity.FeedbackActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notice_img"
+        android:layout_width="190sp"
+        android:padding="12dp"
+        android:layout_height="190sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/notic"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/colorPrimary"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="RtlCompat">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textSub"
+               android:layout_marginTop="220dp"
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_height="match_parent"
+                android:text="Subject"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/feedback_subject"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:layout_below="@id/textSub"
+                android:padding="12dp"
+                android:hint="Subject"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/textmsg"
+                android:layout_below="@id/feedback_subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Message"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="18dp"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/feedback_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="97dp"
+                android:layout_below="@id/textmsg"
+                android:inputType="textMultiLine"
+                android:hint="Your Feedback"
+                android:padding="12dp"
+                android:textSize="12dp"
+                android:background="@drawable/edittext_background"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:singleLine="true" />
+
+            <Button
+                android:layout_below="@id/feedback_msg"
+                android:id="@+id/send_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/colorWhite"
+                android:text="Send Feedback"
+                android:background="@drawable/button_background"
+                android:padding="12dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

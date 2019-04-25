@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_background"
+    tools:context="fragment.LibServicesFragment">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view_libsys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/lib_sys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Service"
+                android:textColor="#e22424"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                />
+
+            <View
+                android:id="@+id/sp4"
+                android:layout_below="@id/lib_sys"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:background="#ffe203"></View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp4"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:text="*Lending Facility \n*Reference Facility\n* Reading Room\n* Book Bank\n* Wi-Fi Facility\n* Digital Library\n* Information Service\n* Career Corner\n* Memberships\n* Newspapers Clippings"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

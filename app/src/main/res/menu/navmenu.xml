@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/clgProfile"
+        android:title="College Profile"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/idFloor"
+        android:icon="@drawable/ic_floor"
+        android:title="Floor Information"/>
+    <item
+        android:id="@+id/idAdmission"
+        android:icon="@drawable/ic_admission"
+        android:title="Admission"/>
+    <item
+        android:id="@+id/idCourse"
+        android:icon="@drawable/ic_courses"
+        android:title="Courses"/>
+    <item
+        android:id="@+id/idLibrary"
+        android:icon="@drawable/ic_library"
+        android:title="Library"/>
+    <item
+        android:id="@+id/idAddNotice"
+        android:icon="@drawable/ic_addnotice"
+        android:title="Add Notice"/>
+    <item
+        android:id="@+id/idViewNotice"
+        android:icon="@drawable/ic_notification"
+        android:title="View Notice"/>
+    <item
+        android:id="@+id/Feedback"
+        android:icon="@drawable/ic_feedback"
+        android:title="Feedback"/>
+    <item
+        android:id="@+id/idAboutUs"
+        android:icon="@drawable/ic_info"
+        android:title="About us"/>
+</menu>

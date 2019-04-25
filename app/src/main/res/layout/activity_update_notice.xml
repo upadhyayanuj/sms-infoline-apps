@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@color/colorDarker"
+    tools:context=".activity.UpdateNoticeActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notice_img"
+        android:layout_width="190sp"
+        android:padding="12dp"
+        android:layout_height="190sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/notic"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/text_description"
+        android:layout_width="fill_parent"
+        android:layout_height="97dp"
+        android:layout_below="@id/notice_img"
+        android:inputType="textMultiLine"
+        android:hint="Text Description"
+        android:padding="12dp"
+        android:textSize="12dp"
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="8dp"
+        android:singleLine="true" />
+
+    <Button
+        android:layout_below="@id/text_description"
+        android:id="@+id/speaks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:text="Speak"
+        android:background="@color/colorPrimaryDark"
+        android:padding="12dp"/>
+
+    <Button
+        android:layout_below="@id/speaks"
+        android:id="@+id/buttonStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:text="Stop"
+        android:background="@color/colorPrimaryDark"
+        android:padding="12dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_background"
+    tools:context="fragment.LibTimeFragment">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view_princi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/princi_desk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Library Timing"
+                android:textColor="#e22424"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                />
+
+            <View
+                android:id="@+id/sp4"
+                android:layout_below="@id/princi_desk"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:background="#ffe203"></View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp4"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:text="The reading room is Wi-Fi enabled &amp; is open for 12 hours from 7:00 am to 7:00 pm."
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
